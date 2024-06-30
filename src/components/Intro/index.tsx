@@ -16,7 +16,7 @@ export const Intro: React.FC = () => {
       <p>
         I&apos;ve been working on <HighlightedText text="frontend projects" /> lately, specially
         ones with <HighlightedText text="complex user interactions" /> defining how these{' '}
-        <HighlightedText text="should be develeped" /> and creating their{' '}
+        <HighlightedText text="should be developed" /> and creating their{' '}
         <HighlightedText text="executiones plans" />.
       </p>
     </section>
