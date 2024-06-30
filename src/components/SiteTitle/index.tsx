@@ -1,6 +1,11 @@
-import { HighlightedText } from "../HighlightedText";
-import "./style.css";
+import * as React from 'react';
+import { HighlightedText } from '../HighlightedText';
+import './style.css';
 
-export function SiteTitle() {
-  return <h1>Hi! I'm <HighlightedText text="Hernan" /></h1>
-}
+export const SiteTitle: React.FC = () => {
+  return (
+    <h1>
+      Hi! I&apos;m <HighlightedText text="Hernan" />
+    </h1>
+  );
+};
