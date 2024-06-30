@@ -13,11 +13,15 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({ company }: Exper
   return (
     <div>
       <h3 className="experience-item-company">
-        <ExperienceItemLogo name={company.name} logoUrl={company.logoUrl} />
+        <ExperienceItemLogo
+          name={company.name}
+          logoUrl={company.logo.url}
+          withBorder={company.logo.withBorder}
+        />
         <span>{company.name}</span>
       </h3>
       <ul>
-        {company.work.map((position) => (
+        {company.positions.map((position) => (
           <li key={position.position}>
             <h4>{position.position}</h4>
             <p>

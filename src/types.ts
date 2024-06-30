@@ -7,6 +7,9 @@ export interface Position {
 
 export interface Company {
   name: string;
-  logoUrl: string;
-  work: Position[];
+  logo: {
+    url: string;
+    withBorder?: boolean;
+  };
+  positions: Position[];
 }

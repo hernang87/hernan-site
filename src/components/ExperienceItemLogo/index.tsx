@@ -1,15 +1,21 @@
 import * as React from 'react';
+import classNames from 'classnames';
 
 import './style.css';
 
 interface ExperienceItemLogoProps {
   name: string;
   logoUrl: string;
+  withBorder?: boolean;
 }
 
 export const ExperienceItemLogo: React.FC<ExperienceItemLogoProps> = ({
   name,
-  logoUrl
+  logoUrl,
+  withBorder
 }: ExperienceItemLogoProps) => {
-  return <img className="logo" src={logoUrl} alt={name} />;
+  const cx = classNames('logo', {
+    'with-border': withBorder ?? false
+  });
+  return <img className={cx} src={logoUrl} alt={name} />;
 };

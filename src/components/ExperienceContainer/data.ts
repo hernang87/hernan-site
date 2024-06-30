@@ -2,9 +2,10 @@ import { type Company } from '../../types';
 
 const mural: Company = {
   name: 'Mural',
-  logoUrl:
-    'https://media.licdn.com/dms/image/C4E0BAQGQsTygnkEJnA/company-logo_200_200/0/1670343515708/muralco_logo?e=1727913600&v=beta&t=xnsv7cb7odNgr4gAc26d5QkYVrb067p_4j4AQso2H0Y',
-  work: [
+  logo: {
+    url: 'https://media.licdn.com/dms/image/C4E0BAQGQsTygnkEJnA/company-logo_200_200/0/1670343515708/muralco_logo?e=1727913600&v=beta&t=xnsv7cb7odNgr4gAc26d5QkYVrb067p_4j4AQso2H0Y'
+  },
+  positions: [
     {
       position: 'Senior Software Engineer',
       description: [
@@ -39,4 +40,90 @@ const mural: Company = {
   ]
 };
 
-export const experienceData: Company[] = [mural];
+const possible: Company = {
+  name: 'Possible Worldwide',
+  logo: {
+    url: 'https://media.licdn.com/dms/image/C4D0BAQH88SE97KUjUA/company-logo_100_100/0/1630531531610/possible_com_logo?e=1727913600&v=beta&t=jk0qptaMuybarhvA8AiZi5JWz6YjJDLBXg5aJo0mxe8',
+    withBorder: true
+  },
+  positions: [
+    {
+      position: 'Lead Developer',
+      description: [
+        'Project estimations and tech feasibility of creative proposals to present to clients',
+        'Prototype building for new business proposals',
+        'Tech team support and development to achieve our deadlines'
+      ],
+      from: new Date('2019-09-01'),
+      to: new Date('2019-11-04')
+    },
+    {
+      position: 'Senior Fullstack Developer',
+      description: [
+        'Landing page development for Microsoft internal communications',
+        'Mentoring of junior developers'
+      ],
+      from: new Date('2019-02-01'),
+      to: new Date('2019-09-01')
+    }
+  ]
+};
+
+const rga: Company = {
+  name: 'R/GA',
+  logo: {
+    url: 'https://media.licdn.com/dms/image/D4E0BAQGONAoWOcssqA/company-logo_100_100/0/1680533527224/r_ga_logo?e=1727913600&v=beta&t=LT7x8bMq3CUA8mk9FEHfDE0wHrFeBAGHTjTJIsyypgU'
+  },
+  positions: [
+    {
+      position: 'Senior Developer',
+      description: [
+        'Building web application using various Javascript frameworks and Sass',
+        'PHP API development using Laravel',
+        'Node API development with MongoDB',
+        'Developer in Google Brandhack projects'
+      ],
+      from: new Date('2015-07-01'),
+      to: new Date('2018-01-01')
+    }
+  ]
+};
+
+const vm: Company = {
+  name: 'Virtualmind Software House',
+  logo: {
+    url: 'https://media.licdn.com/dms/image/D4D0BAQEbScL_UhMAOw/company-logo_100_100/0/1700753354131/virtualmind_com_logo?e=1727913600&v=beta&t=iYvNmhM2jo3kcgAYJeJnjrRrHgnjBF4v801U4uiBCdc'
+  },
+  positions: [
+    {
+      position: 'Software Engineer',
+      description: [
+        'Nexage - Ember.JS development.',
+        'Spredfast (in Austin, TX) – CanJS, Handlebars and Sass development',
+        'MarketingG2 – Knockout.js and Less implementation'
+      ],
+      from: new Date('2013-12-01'),
+      to: new Date('2015-06-01')
+    }
+  ]
+};
+
+const w3: Company = {
+  name: 'W3 Comunicación',
+  logo: {
+    url: 'https://media.licdn.com/dms/image/C4E0BAQE-G9WGmcBMMQ/company-logo_100_100/0/1630597283401/w3digitalagency_logo?e=1727913600&v=beta&t=XLeVqiHtMP12qk-1vYbCJ6PAjiMoCRdr0ZxoN9htsCs'
+  },
+  positions: [
+    {
+      position: 'Web Developer',
+      description: [
+        'On site position at TecPetrol',
+        'Web development using HTML, CSS and Javascript while using C# for backend'
+      ],
+      from: new Date('2013-02-01'),
+      to: new Date('2010-01-01')
+    }
+  ]
+};
+
+export const experienceData: Company[] = [mural, possible, rga, vm, w3];

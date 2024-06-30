@@ -4,3 +4,7 @@
   margin-right: 10px;
   border-radius: 50px;
 }
+
+.with-border {
+  border: 1px solid white;
+}
