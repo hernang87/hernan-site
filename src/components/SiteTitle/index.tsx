@@ -5,7 +5,7 @@ import './style.css';
 export const SiteTitle: React.FC = () => {
   return (
     <h1>
-      Hi! I&apos;m <HighlightedText text="Hernan" />
+      👋 I&apos;m <HighlightedText text="Hernan" />
     </h1>
   );
 };
