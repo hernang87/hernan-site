@@ -22,7 +22,9 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({ company }: Exper
       </h3>
       <ul>
         {company.positions.map((position, index) => (
-          <li key={`${company.name}-${position.position}-${index}`}>
+          <li
+            key={`${company.name}-${position.position}-${index}`}
+            className="experience-item-position">
             <h4>{position.position}</h4>
             <p>
               {formatDate(position.from)} -{' '}
