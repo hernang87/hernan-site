@@ -17,5 +17,5 @@ export const ExperienceItemLogo: React.FC<ExperienceItemLogoProps> = ({
   const cx = classNames('logo', {
     'with-border': withBorder ?? false
   });
-  return <img className={cx} src={logoUrl} alt={name} />;
+  return <img className={cx} src={process.env.PUBLIC_URL + logoUrl} alt={name} />;
 };

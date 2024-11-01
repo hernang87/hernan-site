@@ -3,7 +3,7 @@ import { type Company } from '../../types';
 const mural: Company = {
   name: 'Mural',
   logo: {
-    url: 'https://media.licdn.com/dms/image/C4E0BAQGQsTygnkEJnA/company-logo_200_200/0/1670343515708/muralco_logo?e=1727913600&v=beta&t=xnsv7cb7odNgr4gAc26d5QkYVrb067p_4j4AQso2H0Y'
+    url: '/images/mural-logo.jpeg'
   },
   positions: [
     {
@@ -36,7 +36,7 @@ const mural: Company = {
 const possible: Company = {
   name: 'Possible Worldwide',
   logo: {
-    url: 'https://media.licdn.com/dms/image/C4D0BAQH88SE97KUjUA/company-logo_100_100/0/1630531531610/possible_com_logo?e=1727913600&v=beta&t=jk0qptaMuybarhvA8AiZi5JWz6YjJDLBXg5aJo0mxe8',
+    url: 'images/possible-logo.jpeg',
     withBorder: true
   },
   positions: [
@@ -58,7 +58,7 @@ const possible: Company = {
 const rga: Company = {
   name: 'R/GA',
   logo: {
-    url: 'https://media.licdn.com/dms/image/D4E0BAQGONAoWOcssqA/company-logo_100_100/0/1680533527224/r_ga_logo?e=1727913600&v=beta&t=LT7x8bMq3CUA8mk9FEHfDE0wHrFeBAGHTjTJIsyypgU'
+    url: '/images/rga-logo.jpeg'
   },
   positions: [
     {
@@ -76,9 +76,9 @@ const rga: Company = {
 };
 
 const vm: Company = {
-  name: 'Virtualmind Software House',
+  name: 'Software Mind',
   logo: {
-    url: 'https://media.licdn.com/dms/image/D4D0BAQEbScL_UhMAOw/company-logo_100_100/0/1700753354131/virtualmind_com_logo?e=1727913600&v=beta&t=iYvNmhM2jo3kcgAYJeJnjrRrHgnjBF4v801U4uiBCdc'
+    url: '/images/vm-logo.jpeg'
   },
   positions: [
     {
@@ -97,7 +97,7 @@ const vm: Company = {
 const w3: Company = {
   name: 'W3 Comunicación',
   logo: {
-    url: 'https://media.licdn.com/dms/image/C4E0BAQE-G9WGmcBMMQ/company-logo_100_100/0/1630597283401/w3digitalagency_logo?e=1727913600&v=beta&t=XLeVqiHtMP12qk-1vYbCJ6PAjiMoCRdr0ZxoN9htsCs'
+    url: '/images/w3-logo.jpeg'
   },
   positions: [
     {
