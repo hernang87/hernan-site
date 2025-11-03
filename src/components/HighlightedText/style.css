@@ -1,4 +1,19 @@
 .highlight {
-  color: #90EE90;
+  color: var(--accent-primary);
   text-decoration: underline;
+  text-decoration-color: var(--accent-primary);
+  text-underline-offset: 3px;
+  transition:
+    color var(--transition-normal) var(--ease-in-out),
+    text-shadow var(--transition-normal) var(--ease-in-out),
+    text-decoration-color var(--transition-normal) var(--ease-in-out);
+  position: relative;
+  cursor: default;
+}
+
+.highlight:hover,
+.highlight:focus-visible {
+  color: var(--accent-secondary);
+  text-shadow: 0 0 12px rgba(144, 238, 144, 0.6);
+  text-decoration-color: var(--accent-secondary);
 }
