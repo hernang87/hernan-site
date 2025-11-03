@@ -3,8 +3,22 @@
   height: 40px;
   margin-right: 10px;
   border-radius: 50px;
+  transition:
+    transform var(--transition-normal) var(--ease-in-out),
+    box-shadow var(--transition-normal) var(--ease-in-out);
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 15px rgba(144, 238, 144, 0.4);
 }
 
 .with-border {
   border: 1px solid white;
+  transition: border-color var(--transition-normal) var(--ease-in-out);
+}
+
+.logo:hover.with-border {
+  border-color: var(--accent-primary);
 }

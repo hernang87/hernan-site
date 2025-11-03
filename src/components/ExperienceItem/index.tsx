@@ -11,7 +11,7 @@ interface ExperienceItemProps {
 
 export const ExperienceItem: React.FC<ExperienceItemProps> = ({ company }: ExperienceItemProps) => {
   return (
-    <div>
+    <div className="experience-item">
       <h3 className="experience-item-company">
         <ExperienceItemLogo
           name={company.name}
