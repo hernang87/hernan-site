@@ -31,7 +31,8 @@
   animation-delay: 0.5s;
 }
 
-.experience-item:hover {
+.experience-item:hover,
+.experience-item:focus-within {
   transform: translateX(10px);
   border-color: var(--accent-primary);
   background: rgba(255, 255, 255, 0.05);

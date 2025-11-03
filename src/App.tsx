@@ -7,12 +7,15 @@ import { SocialToolbar } from './components/SocialToolbar';
 const App: React.FC = () => {
   return (
     <div className="App">
+      <a href="#main-content" className="skip-link">
+        Skip to main content
+      </a>
       <SocialToolbar />
-      <div className="container">
+      <main id="main-content" className="container">
         <SiteTitle />
         <Intro />
         <ExperienceContainer />
-      </div>
+      </main>
     </div>
   );
 };

@@ -4,9 +4,16 @@ import './style.css';
 
 export const Intro: React.FC = () => {
   return (
-    <section className="intro">
+    <section className="intro" aria-labelledby="intro-heading">
+      <h2 id="intro-heading" className="sr-only">
+        About Me
+      </h2>
       <p className="intro-paragraph">
-        I&apos;m a <HighlightedText text="Software Engineer" /> based in Buenos Aires, Argentina 🇦🇷.
+        I&apos;m a <HighlightedText text="Software Engineer" /> based in Buenos Aires, Argentina{' '}
+        <span role="img" aria-label="Argentina flag">
+          🇦🇷
+        </span>
+        .
       </p>
       <p className="intro-paragraph">
         I&apos;m focused on <HighlightedText text="product companies" />, I truly care about our{' '}

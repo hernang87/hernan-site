@@ -30,9 +30,11 @@
   transition:
     transform var(--transition-normal) var(--ease-in-out),
     filter var(--transition-normal) var(--ease-in-out);
+  border-radius: 50%;
 }
 
-.social-toolbar a:hover {
+.social-toolbar a:hover,
+.social-toolbar a:focus-visible {
   transform: scale(1.2);
   filter: brightness(1.2) drop-shadow(0 0 8px rgba(144, 238, 144, 0.5));
 }

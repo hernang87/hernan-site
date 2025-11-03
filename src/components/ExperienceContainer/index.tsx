@@ -5,11 +5,11 @@ import './style.css';
 
 export const ExperienceContainer: React.FC = () => {
   return (
-    <div className="experience-container">
-      <h2>Experience</h2>
+    <section className="experience-container" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Experience</h2>
       {experienceData.map((company) => (
         <ExperienceItem key={company.name} company={company} />
       ))}
-    </div>
+    </section>
   );
 };

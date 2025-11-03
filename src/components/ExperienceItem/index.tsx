@@ -10,9 +10,10 @@ interface ExperienceItemProps {
 }
 
 export const ExperienceItem: React.FC<ExperienceItemProps> = ({ company }: ExperienceItemProps) => {
+  const companyId = `company-${company.name.toLowerCase().replace(/\s+/g, '-')}`;
   return (
-    <div className="experience-item">
-      <h3 className="experience-item-company">
+    <article className="experience-item" aria-labelledby={companyId}>
+      <h3 className="experience-item-company" id={companyId}>
         <ExperienceItemLogo
           name={company.name}
           logoUrl={company.logo.url}
@@ -20,24 +21,36 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({ company }: Exper
         />
         <span>{company.name}</span>
       </h3>
-      <ul>
+      <ul role="list">
         {company.positions.map((position, index) => (
           <li
             key={`${company.name}-${position.position}-${index}`}
-            className="experience-item-position">
+            className="experience-item-position"
+            role="listitem">
             <h4>{position.position}</h4>
             <p>
-              {formatDate(position.from)} -{' '}
-              {position.to !== undefined ? formatDate(position.to) : 'Present'}
+              <time dateTime={position.from.toISOString().split('T')[0]}>
+                {formatDate(position.from)}
+              </time>{' '}
+              -{' '}
+              {position.to !== undefined ? (
+                <time dateTime={position.to.toISOString().split('T')[0]}>
+                  {formatDate(position.to)}
+                </time>
+              ) : (
+                'Present'
+              )}
             </p>
-            <ul>
-              {position.description.map((desc) => (
-                <li key={desc}>{desc}</li>
+            <ul role="list">
+              {position.description.map((desc, descIndex) => (
+                <li key={`${desc}-${descIndex}`} role="listitem">
+                  {desc}
+                </li>
               ))}
             </ul>
           </li>
         ))}
       </ul>
-    </div>
+    </article>
   );
 };

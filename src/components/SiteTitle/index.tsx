@@ -5,7 +5,10 @@ import './style.css';
 export const SiteTitle: React.FC = () => {
   return (
     <h1>
-      👋 I&apos;m <HighlightedText text="Hernan" animate />
+      <span role="img" aria-label="Waving hand">
+        👋
+      </span>{' '}
+      I&apos;m <HighlightedText text="Hernan" animate />
     </h1>
   );
 };
