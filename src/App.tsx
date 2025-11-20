@@ -4,6 +4,7 @@ import { Intro } from './components/Intro';
 import { ExperienceContainer } from './components/ExperienceContainer';
 import { SocialToolbar } from './components/SocialToolbar';
 import { ScrollProgress } from './components/ScrollProgress';
+import { BackToTop } from './components/BackToTop';
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
         Skip to main content
       </a>
       <SocialToolbar />
+      <BackToTop />
       <main id="main-content" className="container">
         <SiteTitle />
         <Intro />
