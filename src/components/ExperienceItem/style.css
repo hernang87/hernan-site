@@ -62,4 +62,15 @@
   padding-left: var(--spacing-md);
 }
 
+.experience-item-position ul[role='list'] {
+  list-style: disc;
+  padding-left: var(--spacing-lg);
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.experience-item-position ul[role='list'] li {
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-secondary);
+}
 
