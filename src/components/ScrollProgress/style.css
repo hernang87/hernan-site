@@ -12,7 +12,6 @@
 .scroll-progress-bar {
   height: 100%;
   background: var(--accent-primary);
-  transition: width 0.1s linear;
   box-shadow: 0 0 10px rgba(144, 238, 144, 0.5);
 }
 
