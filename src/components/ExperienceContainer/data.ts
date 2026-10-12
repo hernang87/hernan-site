@@ -24,7 +24,7 @@ const mural: Company = {
     {
       position: 'Senior Software Engineer',
       summary: 'Owned user interactions and canvas navigation.',
-      stack: ['TypeScript', 'React', 'Node.js', 'MongoDB', 'REST', 'TDD'],
+      stack: ['TypeScript', 'React', 'Node.js', 'MongoDB', 'REST'],
       description: [
         'Added custom hit points to SVG shapes for diagramming.',
         'Rewrote arrows from scratch. Arrow bug reports dropped to near zero.',
@@ -44,7 +44,7 @@ const mural: Company = {
         'Built visual tests that compare expected and actual renders. Fewer bugs and regressions.',
         'Shipped the engine into the main app.'
       ],
-      stack: ['TypeScript', 'React', 'Canvas2D', 'TDD'],
+      stack: ['TypeScript', 'React', 'Canvas2D'],
       from: new Date('2019-11-01'),
       to: new Date('2022-07-31')
     }
