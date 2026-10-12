@@ -7,17 +7,14 @@ export const Intro: React.FC = () => {
         About Me
       </h2>
       <p>
-        I&apos;m a software engineer in Buenos Aires{' '}
-        <span role="img" aria-label="Argentina flag">
-          🇦🇷
-        </span>
-        , currently at Webflow. Before that I spent six years at Mural working on the canvas:
-        rendering, arrows, text, the parts people use all day.
+        I&apos;m a software engineer at Webflow. Before that I spent six years at Mural, mostly on
+        the canvas itself: the rendering engine, arrows, text editing, and how people move around a
+        mural.
       </p>
       <p>
-        I like product work, where the user is a real person and not a ticket. Lately that means
-        frontend with complex interactions: working out how it should be built, then planning how to
-        get there.
+        I work on both frontend and backend, and I enjoy products with complex user interactions the
+        most. I like getting involved early, figuring out how something should be built, and then
+        planning the work to ship it.
       </p>
     </section>
   );
