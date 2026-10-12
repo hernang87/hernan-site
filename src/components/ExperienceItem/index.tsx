@@ -3,8 +3,6 @@ import { formatDate } from '../../helpers/format-date';
 import { type Company } from '../../types';
 import { ExperienceItemLogo } from '../ExperienceItemLogo';
 
-import './style.css';
-
 interface ExperienceItemProps {
   company: Company;
 }
@@ -12,8 +10,8 @@ interface ExperienceItemProps {
 export const ExperienceItem: React.FC<ExperienceItemProps> = ({ company }: ExperienceItemProps) => {
   const companyId = `company-${company.name.toLowerCase().replace(/\s+/g, '-')}`;
   return (
-    <article className="experience-item" aria-labelledby={companyId}>
-      <h3 className="experience-item-company" id={companyId}>
+    <article aria-labelledby={companyId}>
+      <h3 id={companyId} className="flex items-center gap-3 text-lg font-semibold">
         <ExperienceItemLogo
           name={company.name}
           logoUrl={company.logo?.url}
@@ -21,34 +19,39 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({ company }: Exper
         />
         <span>{company.name}</span>
       </h3>
-      <ul role="list">
+      <ul className="mt-5 space-y-8">
         {company.positions.map((position, index) => (
           <li
             key={`${company.name}-${position.position}-${index}`}
-            className="experience-item-position"
-            role="listitem">
-            <h4>{position.position}</h4>
-            <p>
-              <time dateTime={position.from.toISOString().split('T')[0]}>
+            className="grid gap-x-6 gap-y-1 sm:grid-cols-[7rem_1fr]">
+            <p className="font-mono text-xs leading-6 text-muted">
+              <time
+                className="whitespace-nowrap"
+                dateTime={position.from.toISOString().split('T')[0]}>
                 {formatDate(position.from)}
               </time>{' '}
-              -{' '}
+              –{' '}
               {position.to !== undefined ? (
-                <time dateTime={position.to.toISOString().split('T')[0]}>
+                <time
+                  className="whitespace-nowrap"
+                  dateTime={position.to.toISOString().split('T')[0]}>
                   {formatDate(position.to)}
                 </time>
               ) : (
                 'Present'
               )}
             </p>
-            {position.summary !== undefined && <p>{position.summary}</p>}
-            <ul role="list">
-              {position.description.map((desc, descIndex) => (
-                <li key={`${desc}-${descIndex}`} role="listitem">
-                  {desc}
-                </li>
-              ))}
-            </ul>
+            <div>
+              <h4 className="font-medium">{position.position}</h4>
+              {position.summary !== undefined && (
+                <p className="mt-1 text-muted">{position.summary}</p>
+              )}
+              <ul className="mt-3 list-disc space-y-1.5 pl-5 text-[0.9375rem] text-ink/85 marker:text-muted/60">
+                {position.description.map((desc, descIndex) => (
+                  <li key={`${desc}-${descIndex}`}>{desc}</li>
+                ))}
+              </ul>
+            </div>
           </li>
         ))}
       </ul>

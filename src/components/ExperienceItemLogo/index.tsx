@@ -1,8 +1,6 @@
 import * as React from 'react';
 import classNames from 'classnames';
 
-import './style.css';
-
 interface ExperienceItemLogoProps {
   name: string;
   logoUrl?: string;
@@ -14,13 +12,18 @@ export const ExperienceItemLogo: React.FC<ExperienceItemLogoProps> = ({
   logoUrl,
   withBorder
 }: ExperienceItemLogoProps) => {
-  const cx = classNames('logo', {
-    'with-border': withBorder ?? false
+  const cx = classNames('h-8 w-8 shrink-0 rounded-md', {
+    'ring-1 ring-line': withBorder ?? false
   });
 
   if (logoUrl === undefined) {
     return (
-      <span className={classNames(cx, 'logo-monogram')} aria-hidden="true">
+      <span
+        className={classNames(
+          cx,
+          'inline-flex items-center justify-center border border-line font-mono text-sm text-muted'
+        )}
+        aria-hidden="true">
         {name.charAt(0)}
       </span>
     );
@@ -31,8 +34,8 @@ export const ExperienceItemLogo: React.FC<ExperienceItemLogoProps> = ({
       className={cx}
       src={process.env.PUBLIC_URL + logoUrl}
       alt={`${name} company logo`}
-      width="40"
-      height="40"
+      width="32"
+      height="32"
       loading="lazy"
     />
   );

@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
-import './style.css';
 
 const SCROLL_THRESHOLD = 300;
 
@@ -37,7 +36,7 @@ export const BackToTop: React.FC = () => {
 
   return (
     <button
-      className="back-to-top"
+      className="fixed bottom-4 right-4 flex h-10 w-10 items-center justify-center rounded-md border border-line bg-paper text-muted transition-colors hover:border-muted hover:text-ink sm:bottom-8 sm:right-8"
       onClick={scrollToTop}
       aria-label="Scroll to top"
       title="Scroll to top">
