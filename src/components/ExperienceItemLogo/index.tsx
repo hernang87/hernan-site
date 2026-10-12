@@ -5,7 +5,7 @@ import './style.css';
 
 interface ExperienceItemLogoProps {
   name: string;
-  logoUrl: string;
+  logoUrl?: string;
   withBorder?: boolean;
 }
 
@@ -17,6 +17,15 @@ export const ExperienceItemLogo: React.FC<ExperienceItemLogoProps> = ({
   const cx = classNames('logo', {
     'with-border': withBorder ?? false
   });
+
+  if (logoUrl === undefined) {
+    return (
+      <span className={classNames(cx, 'logo-monogram')} aria-hidden="true">
+        {name.charAt(0)}
+      </span>
+    );
+  }
+
   return (
     <img
       className={cx}

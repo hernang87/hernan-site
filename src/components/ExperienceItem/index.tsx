@@ -16,8 +16,8 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({ company }: Exper
       <h3 className="experience-item-company" id={companyId}>
         <ExperienceItemLogo
           name={company.name}
-          logoUrl={company.logo.url}
-          withBorder={company.logo.withBorder}
+          logoUrl={company.logo?.url}
+          withBorder={company.logo?.withBorder}
         />
         <span>{company.name}</span>
       </h3>

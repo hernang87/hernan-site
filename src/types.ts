@@ -7,7 +7,7 @@ export interface Position {
 
 export interface Company {
   name: string;
-  logo: {
+  logo?: {
     url: string;
     withBorder?: boolean;
   };

@@ -1,5 +1,16 @@
 import { type Company } from '../../types';
 
+const webflow: Company = {
+  name: 'Webflow',
+  positions: [
+    {
+      position: 'Senior Software Engineer',
+      description: ['Built Page Settings bindings for active page metadata'],
+      from: new Date('2026-01-01')
+    }
+  ]
+};
+
 const mural: Company = {
   name: 'Mural',
   logo: {
@@ -16,7 +27,8 @@ const mural: Company = {
         'Collaborated with product and design teams to improve user onboarding and streamline application usability. ',
         'Contributed to the architecture definition team, creating reactive behaviors to enhance system responsiveness and scalability.'
       ],
-      from: new Date('2022-08-01')
+      from: new Date('2022-08-01'),
+      to: new Date('2026-01-01')
     },
     {
       position: 'Software Engineer',
@@ -27,7 +39,7 @@ const mural: Company = {
         'Created a testing out for the rendering engine for comparing expected and actual renders, notably decreasing the number of bugs and regressions',
         'Successfully integrated the rendering engine into the main application'
       ],
-      from: new Date('2019-04-11'),
+      from: new Date('2019-11-01'),
       to: new Date('2022-07-31')
     }
   ]
@@ -46,11 +58,26 @@ const possible: Company = {
         'Conducted project estimations and assessed the technical feasibility of creative proposals. ',
         'Provided ongoing support to the tech team and contributed to development efforts. ',
         'Built prototypes for new business proposals to explore potential opportunities.',
-        'Developed landing pages internal communications for Microsoft, ensuring effective information dissemination.',
+        "Developed landing pages for Microsoft's internal communications, ensuring effective information dissemination.",
         'Mentored junior developers, fostering their growth and technical skill development.'
       ],
       from: new Date('2019-02-01'),
-      to: new Date('2019-11-04')
+      to: new Date('2019-11-01')
+    }
+  ]
+};
+
+const softvision: Company = {
+  name: 'Softvision',
+  positions: [
+    {
+      position: 'Senior Software Engineer',
+      description: [
+        'Frontend applications development using React, Redux and Sass',
+        'Backend development using Node'
+      ],
+      from: new Date('2018-04-01'),
+      to: new Date('2019-02-01')
     }
   ]
 };
@@ -62,12 +89,12 @@ const rga: Company = {
   },
   positions: [
     {
-      position: 'Senior Developer',
+      position: 'Software Engineer',
       description: [
         'Built web applications using multiple JavaScript frameworks and Sass, creating dynamic and scalable solutions.',
         'Developed APIs with PHP using Laravel and integrating it with mysql',
         'Node APIs development using mysql and mongodb',
-        'Contributed as a developer in Google Brandhack tasks, collaborating on modern and excessive-impact'
+        'Contributed as a developer in Google Brandhack tasks, collaborating on modern and excessive-impact answers'
       ],
       from: new Date('2015-07-01'),
       to: new Date('2018-01-01')
@@ -89,7 +116,21 @@ const vm: Company = {
         'MarketingG2 – Knockout.js and Less implementation'
       ],
       from: new Date('2013-12-01'),
-      to: new Date('2015-06-01')
+      to: new Date('2015-07-01')
+    }
+  ]
+};
+
+const tecnosoftware: Company = {
+  name: 'Tecnosoftware',
+  positions: [
+    {
+      position: 'Software Engineer',
+      description: [
+        'On client position at Telecom Personal doing SharePoint development and analyzing different ways to improve workflows.'
+      ],
+      from: new Date('2013-02-01'),
+      to: new Date('2013-11-01')
     }
   ]
 };
@@ -101,15 +142,24 @@ const w3: Company = {
   },
   positions: [
     {
-      position: 'Web Developer',
+      position: 'Software Engineer',
       description: [
         'On site position at TecPetrol',
         'Web development using HTML, CSS and Javascript while using C# for backend'
       ],
-      from: new Date('2013-02-01'),
-      to: new Date('2014-01-01')
+      from: new Date('2010-01-01'),
+      to: new Date('2013-02-01')
     }
   ]
 };
 
-export const experienceData: Company[] = [mural, possible, rga, vm, w3];
+export const experienceData: Company[] = [
+  webflow,
+  mural,
+  possible,
+  softvision,
+  rga,
+  vm,
+  tecnosoftware,
+  w3
+];
