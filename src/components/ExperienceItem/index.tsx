@@ -51,6 +51,9 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({ company }: Exper
                   <li key={`${desc}-${descIndex}`}>{desc}</li>
                 ))}
               </ul>
+              {position.stack !== undefined && (
+                <p className="mt-3 font-mono text-xs text-muted">{position.stack.join(' · ')}</p>
+              )}
             </div>
           </li>
         ))}

@@ -9,6 +9,7 @@ const webflow: Company = {
     {
       position: 'Senior Software Engineer',
       description: ['Built Page Settings bindings for active page metadata'],
+      stack: ['TypeScript', 'AI', 'Systems design'],
       from: new Date('2026-01-01')
     }
   ]
@@ -23,6 +24,7 @@ const mural: Company = {
     {
       position: 'Senior Software Engineer',
       summary: 'Owned user interactions and canvas navigation.',
+      stack: ['TypeScript', 'React', 'Node.js', 'MongoDB', 'REST', 'TDD'],
       description: [
         'Added custom hit points to SVG shapes for diagramming.',
         'Rewrote arrows from scratch. Arrow bug reports dropped to near zero.',
@@ -42,6 +44,7 @@ const mural: Company = {
         'Built visual tests that compare expected and actual renders. Fewer bugs and regressions.',
         'Shipped the engine into the main app.'
       ],
+      stack: ['TypeScript', 'React', 'Canvas2D', 'TDD'],
       from: new Date('2019-11-01'),
       to: new Date('2022-07-31')
     }
@@ -64,6 +67,7 @@ const possible: Company = {
         'Built internal comms landing pages for Microsoft.',
         'Mentored junior developers.'
       ],
+      stack: ['JavaScript', 'Sass', 'Webpack', 'ESLint'],
       from: new Date('2019-02-01'),
       to: new Date('2019-11-01')
     }
@@ -79,6 +83,7 @@ const softvision: Company = {
         'Frontend applications development using React, Redux and Sass',
         'Backend development using Node'
       ],
+      stack: ['TypeScript', 'React', 'Redux', 'Node.js', 'MongoDB', 'Sass'],
       from: new Date('2018-04-01'),
       to: new Date('2019-02-01')
     }
@@ -98,6 +103,7 @@ const rga: Company = {
         'Built APIs in PHP/Laravel (MySQL) and Node (MySQL, MongoDB).',
         'Developer on Google Brandhack projects.'
       ],
+      stack: ['Node.js', 'PHP', 'Laravel', 'MySQL', 'MongoDB', 'Ember.js'],
       from: new Date('2015-07-01'),
       to: new Date('2018-01-01')
     }
