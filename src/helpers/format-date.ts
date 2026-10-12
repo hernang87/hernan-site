@@ -1,6 +1,6 @@
 export function formatDate(date: Date): string {
-  const month = date.getMonth();
-  const year = date.getFullYear();
+  const month = date.getUTCMonth();
+  const year = date.getUTCFullYear();
   const months = [
     'January',
     'February',
