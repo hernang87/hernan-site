@@ -7,14 +7,19 @@ export const Intro: React.FC = () => {
         About Me
       </h2>
       <p>
-        I&apos;m a software engineer at Webflow. Before that I spent six years at Mural, mostly on
-        the canvas itself: the rendering engine, arrows, text editing, and how people move around a
-        mural.
+        I&apos;m a senior software engineer at Webflow, based in Buenos Aires. I built the global
+        locale bindings that let Webflow sites offer language and region switchers that update on
+        their own, and the bindings for page settings.
       </p>
       <p>
-        I work on both frontend and backend, and I enjoy products with complex user interactions the
-        most. I like getting involved early, figuring out how something should be built, and then
-        planning the work to ship it.
+        Before Webflow I spent six years at Mural, working on the canvas itself. I designed the
+        infinite canvas that became the default for every new mural, and wrote the Canvas2D
+        rendering engine behind it, which took worst-case frame rate from about 10 fps to 40. Later
+        I rewrote how arrows work, and arrow bug reports dropped close to zero.
+      </p>
+      <p>
+        I work on both frontend and backend. I&apos;m happiest on products with complex
+        interactions, where I can get involved early and help decide how they get built.
       </p>
     </section>
   );

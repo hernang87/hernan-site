@@ -12,7 +12,9 @@ export const Header: React.FC = () => {
       <h1 className="font-mono text-3xl font-medium tracking-tight sm:text-4xl">
         Hernan Garchtrom
       </h1>
-      <p className="mt-2 font-mono text-sm text-muted">Senior Software Engineer · Buenos Aires</p>
+      <p className="mt-2 font-mono text-sm text-muted">
+        Senior Software Engineer at Webflow · Buenos Aires
+      </p>
       <nav aria-label="Contact" className="mt-6">
         <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
           {links.map(({ label, href }) => (

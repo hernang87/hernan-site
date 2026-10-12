@@ -8,7 +8,10 @@ const webflow: Company = {
   positions: [
     {
       position: 'Senior Software Engineer',
-      description: ['Built Page Settings bindings for active page metadata'],
+      description: [
+        'Built global locale data bindings (locale, country, language, display name and display image), so sites can add language and region switchers that update automatically.',
+        'Built Page Settings bindings for active page metadata.'
+      ],
       stack: ['TypeScript', 'AI', 'Systems design'],
       from: new Date('2026-01-01')
     }
@@ -41,7 +44,7 @@ const mural: Company = {
         'Designed and built the Infinite Canvas, now the default for every new mural.',
         'Added a dot grid for aligning elements.',
         'Wrote a Canvas2D rendering engine in TypeScript. Worst-case frame rate went from ~10 to ~40 fps.',
-        'Built visual tests that compare expected and actual renders. Fewer bugs and regressions.',
+        'Built visual tests that compare expected and actual renders, which cut down bugs and regressions.',
         'Shipped the engine into the main app.'
       ],
       stack: ['TypeScript', 'React', 'Canvas2D'],
@@ -80,8 +83,8 @@ const softvision: Company = {
     {
       position: 'Senior Software Engineer',
       description: [
-        'Frontend applications development using React, Redux and Sass',
-        'Backend development using Node'
+        'Built frontend apps with React, Redux and Sass.',
+        'Worked on the backend in Node.'
       ],
       stack: ['TypeScript', 'React', 'Redux', 'Node.js', 'MongoDB', 'Sass'],
       from: new Date('2018-04-01'),
