@@ -15,7 +15,7 @@ const App: React.FC = () => {
       </a>
       <SocialToolbar />
       <BackToTop />
-      <main id="main-content" className="container">
+      <main id="main-content" className="mx-auto max-w-2xl px-4 py-12 sm:px-6 sm:py-20">
         <SiteTitle />
         <Intro />
         <ExperienceContainer />
