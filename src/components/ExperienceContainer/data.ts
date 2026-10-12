@@ -2,6 +2,9 @@ import { type Company } from '../../types';
 
 const webflow: Company = {
   name: 'Webflow',
+  logo: {
+    url: '/images/webflow-logo.png'
+  },
   positions: [
     {
       position: 'Senior Software Engineer',
