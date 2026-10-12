@@ -1,0 +1,11 @@
+# Hernan Garchtrom
+
+> Senior software engineer at Webflow, based in Buenos Aires. Previously six years at Mural, working on the canvas and its rendering engine.
+
+At Webflow he built the global locale data bindings that let sites offer language and region switchers, and the Page Settings bindings. At Mural he designed the infinite canvas, wrote the Canvas2D rendering engine behind it and rewrote how arrows work. Before Mural he spent nine years at agencies and consultancies, including R/GA, Possible and Softvision.
+
+## Profile
+
+- [Personal site](https://www.hernangarchtrom.dev/): intro and full work history
+- [LinkedIn](https://www.linkedin.com/in/hernang87): roles, dates and skills
+- [GitHub](https://github.com/hernang87): code
