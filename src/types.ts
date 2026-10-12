@@ -1,6 +1,7 @@
 export interface Position {
   description: string[];
   position: string;
+  summary?: string;
   from: Date;
   to?: Date;
 }

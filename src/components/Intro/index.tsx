@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { HighlightedText } from '../HighlightedText';
 import './style.css';
 
 export const Intro: React.FC = () => {
@@ -9,23 +8,17 @@ export const Intro: React.FC = () => {
         About Me
       </h2>
       <p className="intro-paragraph">
-        I&apos;m a <HighlightedText text="Software Engineer" /> based in Buenos Aires, Argentina{' '}
+        I&apos;m a software engineer in Buenos Aires{' '}
         <span role="img" aria-label="Argentina flag">
           🇦🇷
         </span>
-        .
+        , currently at Webflow. Before that I spent six years at Mural working on the canvas:
+        rendering, arrows, text, the parts people use all day.
       </p>
       <p className="intro-paragraph">
-        I&apos;m focused on <HighlightedText text="product companies" />, I truly care about our{' '}
-        <HighlightedText text="customers" />, ensuring{' '}
-        <HighlightedText text="solutions meet their needs" /> and{' '}
-        <HighlightedText text="exceed expectations" />.
-      </p>
-      <p className="intro-paragraph">
-        I&apos;ve been working on <HighlightedText text="frontend projects" /> lately, specially
-        ones with <HighlightedText text="complex user interactions" /> defining how these{' '}
-        <HighlightedText text="should be developed" /> and creating their{' '}
-        <HighlightedText text="executiones plans" />.
+        I like product work, where the user is a real person and not a ticket. Lately that means
+        frontend with complex interactions: working out how it should be built, then planning how to
+        get there.
       </p>
     </section>
   );

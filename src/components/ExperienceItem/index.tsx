@@ -41,6 +41,7 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({ company }: Exper
                 'Present'
               )}
             </p>
+            {position.summary !== undefined && <p>{position.summary}</p>}
             <ul role="list">
               {position.description.map((desc, descIndex) => (
                 <li key={`${desc}-${descIndex}`} role="listitem">

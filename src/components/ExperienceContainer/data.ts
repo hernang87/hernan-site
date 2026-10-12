@@ -22,13 +22,13 @@ const mural: Company = {
   positions: [
     {
       position: 'Senior Software Engineer',
+      summary: 'Owned user interactions and canvas navigation.',
       description: [
-        'Promoted to Senior Engineer and handling both user interactions and how users browse our canvases.',
-        'Developed and implemented custom hit points in SVG shapes, optimizing diagramming functionality. ',
-        'Re-engineered the arrows logic from the ground up, reducing related bug reports to near zero. ',
-        'Standardized text input tools across the application, enhancing consistency and enabling future feature development. ',
-        'Collaborated with product and design teams to improve user onboarding and streamline application usability. ',
-        'Contributed to the architecture definition team, creating reactive behaviors to enhance system responsiveness and scalability.'
+        'Added custom hit points to SVG shapes for diagramming.',
+        'Rewrote arrows from scratch. Arrow bug reports dropped to near zero.',
+        'Unified the text input tools across the app, so new features build on one implementation.',
+        'Worked with product and design on onboarding.',
+        'Was on the architecture team, working on reactive behaviors.'
       ],
       from: new Date('2022-08-01'),
       to: new Date('2026-01-01')
@@ -36,11 +36,11 @@ const mural: Company = {
     {
       position: 'Software Engineer',
       description: [
-        'Designed and developed the Infinite Canvas, which have become the default tool for creating murals inside the application',
-        'Implemented a dot grid to simplify element alignment',
-        'Built a custom rendering engine using Canvas2D and TypeScript, that specializes in performance optimization, resulting in an increase in frame rate from low 10s to low 40s in worst-case situations',
-        'Created a testing out for the rendering engine for comparing expected and actual renders, notably decreasing the number of bugs and regressions',
-        'Successfully integrated the rendering engine into the main application'
+        'Designed and built the Infinite Canvas, now the default for every new mural.',
+        'Added a dot grid for aligning elements.',
+        'Wrote a Canvas2D rendering engine in TypeScript. Worst-case frame rate went from ~10 to ~40 fps.',
+        'Built visual tests that compare expected and actual renders. Fewer bugs and regressions.',
+        'Shipped the engine into the main app.'
       ],
       from: new Date('2019-11-01'),
       to: new Date('2022-07-31')
@@ -58,11 +58,11 @@ const possible: Company = {
     {
       position: 'Lead Developer',
       description: [
-        'Conducted project estimations and assessed the technical feasibility of creative proposals. ',
-        'Provided ongoing support to the tech team and contributed to development efforts. ',
-        'Built prototypes for new business proposals to explore potential opportunities.',
-        "Developed landing pages for Microsoft's internal communications, ensuring effective information dissemination.",
-        'Mentored junior developers, fostering their growth and technical skill development.'
+        'Estimated projects and checked whether creative pitches were technically doable.',
+        'Supported the dev team and wrote code alongside them.',
+        'Built prototypes for new business pitches.',
+        'Built internal comms landing pages for Microsoft.',
+        'Mentored junior developers.'
       ],
       from: new Date('2019-02-01'),
       to: new Date('2019-11-01')
@@ -94,10 +94,9 @@ const rga: Company = {
     {
       position: 'Software Engineer',
       description: [
-        'Built web applications using multiple JavaScript frameworks and Sass, creating dynamic and scalable solutions.',
-        'Developed APIs with PHP using Laravel and integrating it with mysql',
-        'Node APIs development using mysql and mongodb',
-        'Contributed as a developer in Google Brandhack tasks, collaborating on modern and excessive-impact answers'
+        'Built web apps with various JS frameworks and Sass.',
+        'Built APIs in PHP/Laravel (MySQL) and Node (MySQL, MongoDB).',
+        'Developer on Google Brandhack projects.'
       ],
       from: new Date('2015-07-01'),
       to: new Date('2018-01-01')
