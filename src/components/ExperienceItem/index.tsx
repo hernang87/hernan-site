@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { formatDate } from '../../helpers/format-date';
 import { type Company } from '../../types';
+import { DateRange } from '../DateRange';
 import { ExperienceItemLogo } from '../ExperienceItemLogo';
 
 interface ExperienceItemProps {
@@ -23,24 +23,8 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({ company }: Exper
         {company.positions.map((position, index) => (
           <li
             key={`${company.name}-${position.position}-${index}`}
-            className="grid gap-x-6 gap-y-1 sm:grid-cols-[7rem_1fr]">
-            <p className="font-mono text-xs leading-6 text-muted">
-              <time
-                className="whitespace-nowrap"
-                dateTime={position.from.toISOString().split('T')[0]}>
-                {formatDate(position.from)}
-              </time>{' '}
-              –{' '}
-              {position.to !== undefined ? (
-                <time
-                  className="whitespace-nowrap"
-                  dateTime={position.to.toISOString().split('T')[0]}>
-                  {formatDate(position.to)}
-                </time>
-              ) : (
-                'Present'
-              )}
-            </p>
+            className="grid gap-x-6 gap-y-1 sm:grid-cols-[9rem_1fr]">
+            <DateRange from={position.from} to={position.to} />
             <div>
               <h4 className="font-medium">{position.position}</h4>
               {position.summary !== undefined && (

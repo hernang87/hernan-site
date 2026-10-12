@@ -161,13 +161,6 @@ const w3: Company = {
   ]
 };
 
-export const experienceData: Company[] = [
-  webflow,
-  mural,
-  possible,
-  softvision,
-  rga,
-  vm,
-  tecnosoftware,
-  w3
-];
+export const experienceData: Company[] = [webflow, mural, possible, softvision, rga];
+
+export const earlierExperienceData: Company[] = [vm, tecnosoftware, w3];

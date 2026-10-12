@@ -1,6 +1,7 @@
 import React from 'react';
-import { experienceData } from './data';
+import { earlierExperienceData, experienceData } from './data';
 import { ExperienceItem } from '../ExperienceItem';
+import { EarlierExperience } from '../EarlierExperience';
 
 export const ExperienceContainer: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ export const ExperienceContainer: React.FC = () => {
           <ExperienceItem key={company.name} company={company} />
         ))}
       </div>
+      <EarlierExperience companies={earlierExperienceData} />
     </section>
   );
 };
