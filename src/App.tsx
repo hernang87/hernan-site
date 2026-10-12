@@ -4,10 +4,12 @@ import { Intro } from './components/Intro';
 import { ExperienceContainer } from './components/ExperienceContainer';
 import { ScrollProgress } from './components/ScrollProgress';
 import { BackToTop } from './components/BackToTop';
+import { DotGrid } from './components/DotGrid';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <div className="relative isolate">
+      <DotGrid />
       <ScrollProgress />
       <a href="#main-content" className="skip-link">
         Skip to main content
