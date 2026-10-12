@@ -3,8 +3,7 @@ import * as React from 'react';
 const links = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/hernang87' },
   { label: 'GitHub', href: 'https://github.com/hernang87' },
-  { label: 'Instagram', href: 'https://instagram.com/hernang87' },
-  { label: 'Email', href: 'mailto:hernang87@gmail.com' }
+  { label: 'Instagram', href: 'https://instagram.com/hernang87' }
 ];
 
 export const Header: React.FC = () => {
